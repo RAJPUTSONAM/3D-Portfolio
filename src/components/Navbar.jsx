@@ -42,17 +42,18 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src='../src/assets/Logo.webp' alt='Logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
-            Sonam &nbsp;
-            <span className='sm:block hidden'> | Rajput</span>
-          </p>
+          <div className="logo custom-logo">
+          <img src='../src/assets/nambiTech.png' alt='Logo'/>
+          </div>
+          {/* <p className='text-[#071952] text-[29px] font-extrabold cursor-pointer flex '>
+            Nambi  &nbsp;<span className='sm:block hidden text-white font-normal'>Tech</span>
+          </p> */}
         </Link>
- 
+   
         <ul className='list-none hidden sm:flex flex-row gap-10'>
           {navLinks.map((nav) => (
             <li
-              key={nav.id}
+              key={nav.id} 
               className={`${
                 active === nav.title ? "text-white" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
@@ -60,13 +61,13 @@ const Navbar = () => {
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
             </li>
-          ))}
+            ))}
         </ul>
 
         <div className='sm:hidden flex flex-1 justify-end items-center'>
           <img
             src={toggle ? close : menu}
-            alt='menu'
+            alt='menu' 
             className='w-[28px] h-[28px] object-contain'
             onClick={() => setToggle(!toggle)}
           />
@@ -100,3 +101,5 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
+

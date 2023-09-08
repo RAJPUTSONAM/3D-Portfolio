@@ -15,24 +15,37 @@ import {
     git,
     figma,
     docker,
-    meta,
-    starbucks,
-    tesla,
-    shopify,
     carrent,
     jobit,
     tripguide,
     threejs,
+    Computing,
+    contract,
+    design,
+    development,
+    wordpress
   } from "../assets";
   
   export const navLinks = [
     {
-      id: "about",
-      title: "About",
+      id: 'home',
+      title: 'Home',
     },
     {
-      id: "work",
-      title: "Work",
+      id: 'company',
+      title: 'Company',
+    },
+    {
+      id: "about",
+      title: "About Us",
+    },
+    { 
+      id: 'services',
+      title : 'Services',
+    },
+    {
+      id: "team",
+      title: "Team",
     },
     {
       id: "contact",
@@ -40,24 +53,24 @@ import {
     },
   ];
   
-  const services = [
-    {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "React Native Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
-  ];
+  // const services = [
+  //   {
+  //     title: "Web Developer",
+  //     icon: web,
+  //   },
+  //   {
+  //     title: "React Native Developer",
+  //     icon: mobile,
+  //   },
+  //   {
+  //     title: "Backend Developer",
+  //     icon: backend,
+  //   },
+  //   {
+  //     title: "Content Creator",
+  //     icon: creator,
+  //   },
+  // ];
   
   const technologies = [
     {
@@ -114,85 +127,75 @@ import {
     },
   ];
   
-  const experiences = [
+  const services = [
     {
-      title: "React.js Developer",
-      company_name: "Starbucks",
-      icon: starbucks,
+      title: "Smart Contracts",
+      icon: contract,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        'Writing Smart Contracts in Solidity for EVM based Chains',
       ],
     },
     {
-      title: "React Native Developer",
-      company_name: "Tesla",
-      icon: tesla,
+      title: "API Development",
+      icon: development,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        'We create APIs in different languages as per requirements. Prefered language is NodeJS/NestJS',
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "UI / UX Design",
+      icon: design,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "We can design UI /UX in Figma and Adobe",
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Web Development",
+      icon: development,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "We create web designs in HTML, CSS, JS, Tailwind and develop in ReactJS",
+      ],
+    },
+    {
+      title: "Cloud Computing",
+      icon: Computing,
+      iconBg: "#E6DEDD",
+      points: [
+        "We can help setup cloud infrastructures on AWS, Azure, Google Cloud, etc.",
+      ],
+    },
+    {
+      title: "WordPress",
+      icon: wordpress,
+      iconBg: "#E6DEDD",
+      points: [
+        "We develop wordpress projects including plugins development",
       ],
     },
   ];
   
-  const testimonials = [
+  const team = [
     {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+      image: 'https://nambitech.com/assets/images/rahul.png',
+      name: "RAHUL SINGH",
+      designation: "CO-FOUNDER",
+      Head: "Head Of Technology",
+      Link: 'https://www.linkedin.com/in/rahul-singh-ba9143101/"',
+      // testimonial:
+      //   "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
     },
     {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
+      image: "https://nambitech.com/assets/images/rakesh.jpeg",
+      name: "RAKESH YADAV",
+      designation: "CO-FOUNDER",
+      Head: "CHIEF ARCHITECT",
+      Link:"https://www.linkedin.com/in/yadurakesh/",
+      // testimonial:
+      //   "I've never met a web developer who truly cares about their clients' success like Rick does.",
     },
   ];
   
@@ -262,5 +265,5 @@ import {
     },
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { technologies, services, team, projects };
   
