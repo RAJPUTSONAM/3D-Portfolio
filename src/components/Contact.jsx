@@ -32,35 +32,36 @@ const Contact = () => {
 
     emailjs.send('service_dv37htg', 
                 'template_l4tlpjd',
-                {
-                  form_name: form.name,
-                  to_name: 'Sonam',
-                  form_email: form.email,
-                  to_email: 'rajputsonam1706@gmail.com',
-                  message: form.message,
-                } ,
-                '_aKGYJXoIucqqeWEf'
-                )
-                .then(() => {
-                  setLoading(false);
-                  alert('Thank You. I will get back to you as soon as possible.');
+         {
+           form_name: form.name,
+           to_name: 'Sonam',
+           form_email: form.email,
+           to_email: 'rajputsonam1706@gmail.com',
+           message: form.message,
+        },
+          '_aKGYJXoIucqqeWEf'
+          )
+          .then(() => {
+          setLoading(false);
+          alert('Thank You. I will get back to you as soon as possible.');
 
-                  setForm({
-                    name: '',
-                    email: '',
-                    message: '',
-                  })
-                }, (error) => {
-                  setLoading(false)
+          setForm({
+          name: '',
+          email: '',
+          message: '',
+          })
+        }, (error) => {
+          setLoading(false)
 
-                  console.log(error);
+          console.log(error);
 
-                  alert('Something went wrong.')
-                })
+          alert('Something went wrong.')
+        })
   }
   
   return (
-    <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+    <div className="xl:mt-12 xl:flex-row flex-col-reverse 
+    flex gap-10 overflow-hidden">
       <motion.div
         variants={slideIn('left', 'tween', 0.2, 1)}      
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -80,7 +81,8 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary 
+              text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -91,7 +93,8 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary 
+              text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
           <label className="flex flex-col">
@@ -102,13 +105,15 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary 
+              text-white rounded-lg outlined-none border-none font-medium"
             />
           </label>
 
           <button
            type="submit"
-           className="bg-tertiary py-3 px-8 outline-none w-fit text-white font-bold shadow-md shadow-primary rounded-xl"
+           className="bg-tertiary py-3 px-8 outline-none w-fit 
+           text-white font-bold shadow-md shadow-primary rounded-xl"
           >
             {loading ? 'Sending...' : 'Send'}
           </button>

@@ -32,10 +32,6 @@ import {
       title: 'Home',
     },
     {
-      id: 'company',
-      title: 'Company',
-    },
-    {
       id: "about",
       title: "About Us",
     },
