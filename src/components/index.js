@@ -9,6 +9,7 @@ import Works from "./Works";
 import Team from "./Team";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
+// import Card from './Card';
 
 
 export {
@@ -25,5 +26,6 @@ export {
   EarthCanvas, 
   BallCanvas, 
   ComputersCanvas, 
-  StarsCanvas
+  StarsCanvas,
+  // Card
 };

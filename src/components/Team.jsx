@@ -59,7 +59,7 @@ const TeamCard = ({
   </div>
 </div>
   </motion.div>
-);
+);  
 
 const Team = () => {
   return (
@@ -116,16 +116,14 @@ const Team = () => {
   but we want you to keep an eye on this section as we add customer success stories.</p>
   </div>
   <div className="mt-6">
-  <a href="#Contact" className="btn bg-indigo-600 hover:bg-indigo-700 
-  border-indigo-600 hover:border-indigo-700
-  text-white rounded-md 1tr:mr-2 rtl:ml-2 mt-2">
-  <i className="uil uil-envolope"></i>  
+  <a href="/contact" class="btn bg-indigo-600 hover:bg-indigo-700 border-indigo-600 
+  hover:border-indigo-700 text-white rounded-md ltr:mr-2 rtl:ml-2 mt-2"> 
   Contact Us
-  </a>
+</a>
   <div className="mt-20 ">
   <h3 className="font-bold mb-2 text-3xl">OUR FOUNDERS</h3>
     </div>
-    </div>
+    </div> 
    </div>
   </div>
  </div>
