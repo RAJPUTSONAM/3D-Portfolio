@@ -1,21 +1,21 @@
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
-import { motion } from 'framer-motion';
+import { color, motion } from 'framer-motion';
 
 import 'react-vertical-timeline-component/style.min.css';
 import { styles } from '../styles';
 import { services } from '../constants';
-import { SectionWrapper } from '../hoc';
+import { SectionWrapper } from '../hoc'; 
 import { textVariant } from '../utils/motion';
 
 const ServicesCard = ({ service }) => (
-  <VerticalTimelineElement
-    contentStyle={{background: '#1d1836', color: '#fff'}}  
+  <VerticalTimelineElement 
+    contentStyle={{background: '#2A2F4F', color: '#fff'}}  
     contentArrowStyle={{borderRight: '7px solid #232631'}}
     iconStyle={{background: service.iconBg }}
     icon={
       <div  className='flex justify-center items-center w-full h-full'>
         <img 
-          src={service.icon}
+          src={service.icon} 
           className='w-[60%] h-[60%] object-contain'
         />
       </div>
@@ -23,7 +23,7 @@ const ServicesCard = ({ service }) => (
     
   >
     <div> 
-      <h3 className='text-white text-[24px] font-bold'>{service.title}</h3>
+      <h3 className='service'>{service.title}</h3>
       {/* <p className='text-secondary text-[16px] font-semibold' style={{margin: 0}}>{experience}</p> */}
     </div>
 
@@ -36,7 +36,7 @@ const ServicesCard = ({ service }) => (
         {point}
       </li>
     ))}
-    </ul>
+    </ul>   
   </VerticalTimelineElement>
 )
 
@@ -59,4 +59,4 @@ const Services = () => {
   )
 }
 
-export default SectionWrapper(Services, 'work')
+export default SectionWrapper(Services, 'services')
