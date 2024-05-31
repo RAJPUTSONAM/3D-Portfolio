@@ -80,7 +80,7 @@ const Team = () => {
     <div className="col-span-6">
     <div className="grid grid-cols-1 gap-6">
       <img src="https://nambitech.com/assets/images/about/ab03.jpg" className="shadow rounded-md" />
-      <img src="ttps://nambitech.com/assets/images/about/ab02.jpg" className="shadow rounded-md" />
+      <img src="https://nambitech.com/assets/images/about/ab02.jpg" className="shadow rounded-md" />
     </div>
     </div>
 
