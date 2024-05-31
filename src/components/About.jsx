@@ -44,7 +44,7 @@ const About = () => {
   <div className='grid lg:grid-cols-12 md:grid-cols-2 
    grid-col-1 items-center mt-16 gap-[30px]'>
   <div className='lg:col-span-5'>
-  <img src='..\src\assets\SEO_SVG.27915bc4.svg' alt='animation' 
+  <img src='https://nambitech.com/static/media/SEO_SVG.bc731bf7e6c753dbf696f28f12f59af0.svg' alt='animation' 
   className='float-right my-0.4 h-[350px] w-[550px] w-96 ' />
   </div>
   <div className='lg:col-span-7 mt-8 md:mt-0'>
@@ -103,7 +103,7 @@ const About = () => {
     <div className="lg:col-span-5 md:order-2 order-1">
     <div className="ltr:lg:ml-10 rtl:lg:mr-10">
     <div className='dark:bg-slate-900 p-6 rounded-md dark:shadow-gray-800 mt-20px' >
-    <img src='../src/assets/Mobile_notification_SVG..svg' alt='Mobile' 
+    <img src='https://nambitech.com/static/media/Mobile_notification_SVG.03a47a073ac229b7d1bbcfc7c95eb40b.svg' alt='Mobile' 
     className='w-1/9 h-auto mt-49px'/>
     </div>
     </div>
