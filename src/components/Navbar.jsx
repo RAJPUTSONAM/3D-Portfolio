@@ -43,7 +43,7 @@ const Navbar = () => {
           }}
         >
           <div className="logo custom-logo">
-          <img src='../src/assets/nambiTech.png' alt='Logo'/>
+          <img src='https://nambitech.com/static/media/logo-dark2.0c8faa1510973bd28f65.png' alt='Logo'/>
           </div>
           {/* <p className='text-[#071952] text-[29px] font-extrabold cursor-pointer flex '>
             Nambi  &nbsp;<span className='sm:block hidden text-white font-normal'>Tech</span>
