@@ -16,10 +16,11 @@ const Home = () => {
       </div>
         <h4 class="font-semibold lg:leading-normal
         leading-normal text-4xl lg:text-4xl mb-5 text-white">
+        Extrnl.io <span className='text-xl font-medium'><br/> An International software development company</span>
         <br/> <span class="text-indigo-600">  
-        Extrnl Software Consultancy</span></h4>
+        Turning Visions into Code</span></h4>
         <p className="text-slate-400 text-lg max-w-2xl
-        mt-[6rem] absolute pt-[33px] leading-[31px] p-[40px] "> 
+        mt-[9rem] absolute pt-[33px] leading-[31px] p-[40px] "> 
         "Expert software developers with a passion for 
         creating commercially viable Blockchain products."
         </p>
