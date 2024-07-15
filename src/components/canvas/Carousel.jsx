@@ -1,38 +1,58 @@
-import { useState } from 'react'
-import {ChevronLeft, ChevronRight} from 'react-feather'
-export default function Carousel ({ children: slides}){
-    const [curr, setCurr] = useState(0)
+import { useState } from "react";
+import {
+  BsFillArrowRightCircleFill,
+  BsFillArrowLeftCircleFill,
+} from "react-icons/bs";
+export default function Carousel({ slides }) {
+  let [current, setCurrent] = useState(0);
 
-    const prev = () =>
-        setCurr((curr) => (curr === 0 ? slides.length - 1 : curr - 1))
-    const next = () =>
-        setCurr((curr) => (curr === slides.length - 1 ? 0 : curr + 1))
-    return(
-        <div className="mt-[69rem]">
-            <div className="flex transition-transform ease-out duration-500" style={{ transform: `translateX(-${curr*100}%)`}}>{slides}</div>
-            <div className="absolute inset-0 flex items-center justify-between p-4">
-            <button
-            onClick={prev} 
-            className="p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white">
-            <ChevronLeft size={40}/>
-            </button>
-            <button 
-            onClick={next}
-            className='p-1 rounded-full shadow bg-white/80 text-gray-800 hover:bg-white'>
-                <ChevronRight size={40}/>
-            </button>
-            </div>
+  let previousSlide = () => {
+    if (current === 0) setCurrent(slides.length - 1);
+    else setCurrent(current - 1);
+  };
 
-            <div className='absolute bottom-4 right-0 left-0'>
-            <div className='flex items-center justify-center gap-2 '>
-            {slides.map((_, i) => (
-                <div className={`
-                transition-all w-3 h-3 bg-white rounded-full 
-                ${curr === i ? 'p-4' : 'bg-opacity-50'}
-                `}/>
-            ))}
-            </div>
-            </div>  
-        </div>
-    )
+  let nextSlide = () => {
+    if (current === slides.length - 1) setCurrent(0);
+    else setCurrent(current + 1);
+  };
+
+  return (
+    <div className="overflow-hidden relative">
+      <div
+        className={`flex transition ease-out duration-40`}
+        style={{
+          transform: `translateX(-${current * 100}%)`,
+        }}
+      >
+        {slides.map((s) => {
+          return <img src={s} />;
+        })}
+      </div>
+
+      <div className="absolute top-0 h-full w-full justify-between items-center flex text-white px-10 text-3xl">
+        <button onClick={previousSlide}>
+          <BsFillArrowLeftCircleFill />
+        </button>
+        <button onClick={nextSlide}>
+          <BsFillArrowRightCircleFill />
+        </button>
+      </div>
+
+      <div className="absolute bottom-0 py-4 flex justify-center gap-3 w-full">
+        {slides.map((s, i) => {
+          return (
+            <div
+              onClick={() => {
+                setCurrent(i);
+              }}
+              key={"circle" + i}
+              className={`rounded-full w-5 h-5 cursor-pointer  ${
+                i == current ? "bg-white" : "bg-gray-500"
+              }`}
+            ></div>
+          );
+        })}
+      </div>
+    </div>
+  );
 }
