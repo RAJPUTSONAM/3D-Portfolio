@@ -2,6 +2,7 @@ import React from 'react';
 import { Tilt }from 'react-tilt';
 import { motion } from 'framer-motion';
 import { SectionWrapper} from '../hoc';
+import forwardicon from '../assets/fast-forward.png'
 
 import { styles } from '../styles';
 // import { services } from '../constants';
@@ -51,40 +52,44 @@ const About = () => {
   <div className='ltr:lg-ml-10 rtl:lg:mr-10'>
   <p className='text-slate-300 max-w-xl mb-3'>BlockChain Services</p>
   <h3 className='mb-6 md:text-3xl text-2xl md:leading-normal 
-  leading-normal font-semibold'>DAPP / SMART CONTRACT DEVELOPMENT</h3>
-  <p className='text-slate-400 max-w-xl'>"Smart contract development is 
-  all about being consistently perfect. Our five-step process helps us 
-  to repeatedly develop secure contracts for our clients."</p>
+  leading-normal font-semibold text-indigo-600 '>"Decentralized Application's: Building with Confidence"</h3>
+  <p className='max-w-xl'>
+  "With a focus on perfection, our five-step methodology ensures the creation of secure and dependable smart contracts for our clients."</p>
   <ul className='list-none text-slate-400 mt-3'>
   <li className='mb-1 flex text-white text-[20px] gap-x-3.5 '>
-  <i className='uil uil-check-circle text-indigo-600 
+  <i className='text-indigo-600 
   text-xl 1tr:mr-2 rtl:ml-2 flex-gap '>
+    <img src={forwardicon} width={13}  className='pt-2'/>
   </i>
-  DECIDE
+  PLAN
   </li>
   <li className='mb-1 flex text-white 
   text-[20px] gap-x-3.5 '>
-  <i className='uil uil-check-circle text-indigo-600 
+  <i className='text-indigo-600 
   text-xl 1tr:mr-2 rtl:ml-2 flex-gap '>
+    <img src={forwardicon} width={13}  className='pt-2'/>
   </i>
-  DERIVE
+  PROTOTYPE
   </li>
   <li className='mb-1 flex text-white text-[20px] gap-x-3.5 '>
-  <i className='uil uil-check-circle text-indigo-600 
+  <i className='text-indigo-600 
   text-xl 1tr:mr-2 rtl:ml-2 flex-gap '>
+    <img src={forwardicon} width={13}  className='pt-2'/>
   </i>
-  DEVELOP
+  PRODUCE
   </li>
   <li className='mb-1 flex text-white text-[20px] gap-x-3.5 '>
-  <i className='uil uil-check-circle text-indigo-600 
-  text-xl 1tr:mr-2 rtl:ml-2 flex-gap '>
+  <i className='text-indigo-600 
+  text-xl 1tr:mr-2 rtl:ml-2 flex-gap'>
+    <img src={forwardicon} width={13}  className='pt-2'/>
   </i>
-  DESTROY IF YOU CAN :)
+  PROTECT 
   </li>
   <li className='mb-1 flex text-white text-[20px] gap-x-3.5 '>
-  <i className='uil uil-check-circle text-indigo-600 text-xl 1tr:mr-2 rtl:ml-2 flex-gap '>
+  <i className='text-indigo-600 text-xl 1tr:mr-2 rtl:ml-2 flex-gap '>
+  <img src={forwardicon} width={13} className='pt-2'/>
   </i>
-  DELIVERY  
+  PRESENT  
   </li>
   </ul>
   <div className='mt-4'>
@@ -116,16 +121,20 @@ const About = () => {
 
       <ul class="list-none text-white text-slate-400 mt-4">
       <li class="mb-1 flex gap-x-3.5 ">
-      <i class="uil uil-check-circle text-indigo-600 text-xl ltr:mr-2 rtl:ml-2">
+      <i class=" text-indigo-600 text-xl ltr:mr-2 rtl:ml-2">
+      <img src={forwardicon} width={13}  className='pt-2'/>
       </i> Ideation and Research</li>
       <li class="mb-1 flex gap-x-3.5 ">
-      <i class="uil uil-check-circle text-indigo-600 text-xl ltr:mr-2 rtl:ml-2">
+      <i class=" text-indigo-600 text-xl ltr:mr-2 rtl:ml-2">
+      <img src={forwardicon} width={13}  className='pt-2'/>
       </i> Prototyping</li>
       <li class="mb-1 flex gap-x-3.5 ">
-      <i class="uil uil-check-circle text-indigo-600 text-xl ltr:mr-2 rtl:ml-2">
+      <i class=" text-indigo-600 text-xl ltr:mr-2 rtl:ml-2">
+      <img src={forwardicon} width={13}  className='pt-2'/>
       </i> UI/UX Design</li>
       <li class="mb-1 flex gap-x-3.5 ">
-      <i class="uil uil-check-circle text-indigo-600 text-xl ltr:mr-2 rtl:ml-2">
+      <i class=" text-indigo-600 text-xl ltr:mr-2 rtl:ml-2">
+      <img src={forwardicon} width={13}  className='pt-2'/>
       </i> MVP development</li>
       </ul>
     <div>

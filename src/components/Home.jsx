@@ -16,12 +16,12 @@ const Home = () => {
       </div>
         <h4 class="font-semibold lg:leading-normal
         leading-normal text-4xl lg:text-4xl mb-5 text-white">
-        HI! WE ARE <br/> <span class="text-indigo-600">NAMBI 
-        TECHNOLOGIES</span></h4>
+        <br/> <span class="text-indigo-600">  
+        Extrnl Software Consultancy</span></h4>
         <p className="text-slate-400 text-lg max-w-2xl
-        mt-[7rem] absolute pt-[33px] leading-[31px] p-[40px] "> 
-        "A group of talented software developers who are passionate 
-        about building commercially scalable Blockchain products."
+        mt-[6rem] absolute pt-[33px] leading-[31px] p-[40px] "> 
+        "Expert software developers with a passion for 
+        creating commercially viable Blockchain products."
         </p>
       </div>
         <ComputersCanvas />
