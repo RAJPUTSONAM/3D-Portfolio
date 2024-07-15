@@ -2,6 +2,7 @@ import {Tilt} from 'react-tilt';
 import { motion } from 'framer-motion';
 
 import { styles } from '../styles';
+import Carousel from '../components/canvas/Carousel'
 import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
@@ -59,6 +60,12 @@ const ProjectCard = ({index, name, description, tags, image, source_code_link}) 
 } 
 
 const Works = () => {
+  const slides = [
+    'https://images.pexels.com/photos/3225517/pexels-photo-3225517.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    'https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    'https://images.pexels.com/photos/707344/pexels-photo-707344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+    'https://images.pexels.com/photos/1028225/pexels-photo-1028225.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
+  ]
   return (
 <div className='container'>
     <div className='grid grid-cols-1 pb-8 text-center'>
@@ -303,6 +310,17 @@ const Works = () => {
       </div>
     </div>
   </div> 
+
+
+  <main className=''>
+    <div className='max-w-lg'>
+    <Carousel>
+    {slides.map((s) => {
+        <img src={s}/>
+    })}
+    </Carousel>
+    </div>
+  </main>
 </div>
       
   )

@@ -46,7 +46,7 @@ const About = () => {
    grid-col-1 items-center mt-16 gap-[30px]'>
   <div className='lg:col-span-5'>
   <img src='https://nambitech.com/static/media/SEO_SVG.bc731bf7e6c753dbf696f28f12f59af0.svg' alt='animation' 
-  className='float-right my-0.4 h-[350px] w-[550px] w-96 ' />
+  className='float-right my-0.4 h-[350px] w-[550px] w-96 '/>
   </div>
   <div className='lg:col-span-7 mt-8 md:mt-0'>
   <div className='ltr:lg-ml-10 rtl:lg:mr-10'>

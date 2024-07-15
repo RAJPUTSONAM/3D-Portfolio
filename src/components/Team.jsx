@@ -16,24 +16,23 @@ const TeamCard = ({
 }) => (
   <motion.div
   variants={fadeIn("", "spring", index * 0.5, 0.75)}
-  className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
+  className='bg-black-200 p-10 rounded-3xl xs:w-[100%] w-full flex flex-col items-center'
   >
-  <p className='text-white font-black text-[48px]'>"</p>
 
-  <div className='mt-1'>
+  <div className='mt-1 flex flex-col items-center'>
     <img
       src={image}
       alt={`feedback_by-${name}`}
-      className='w-90 h-20 align-center rounded-full object-cover'/>
+      className='w-[100px] h-[100px] object-cover rounded-full'/>
       {/* <p className='text-white tracking-wider text-[18px]'>{testimonial}</p> */}
 
 
   <div className='mt-7 flex justify-between items-center gap-1'>
-    <div className='flex-1 flex flex-col'>
+    <div className='flex-1 flex flex-col items-center'>
       <p className='text-white font-bold text-[20px] '>
         <span className='blue-text-gradient'></span> {name}
       </p>
-      <p className='mt-1 text-secondary text-[12px]'>
+      <p className='mt-1 text-secondary text-[12px] text-center'>
         {designation} <br/> {Head}
       </p>
 
@@ -121,7 +120,7 @@ const Team = () => {
   Contact Us
 </a>
   <div className="mt-20 ">
-  <h3 className="font-bold mb-2 text-3xl">OUR FOUNDERS</h3>
+  <h3 className="font-bold mb-2 text-3xl">FOUNDER</h3>
     </div>
     </div> 
    </div>

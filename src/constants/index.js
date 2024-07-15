@@ -178,20 +178,11 @@ import {
     {
       image: 'https://nambitech.com/assets/images/rahul.png',
       name: "RAHUL SINGH",
-      designation: "CO-FOUNDER",
+      designation: "FOUNDER",
       Head: "Head Of Technology",
       Link: 'https://www.linkedin.com/in/rahul-singh-ba9143101/"',
       // testimonial:
       //   "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    },
-    {
-      image: "https://nambitech.com/assets/images/rakesh.jpeg",
-      name: "RAKESH YADAV",
-      designation: "CO-FOUNDER",
-      Head: "CHIEF ARCHITECT",
-      Link:"https://www.linkedin.com/in/yadurakesh/",
-      // testimonial:
-      //   "I've never met a web developer who truly cares about their clients' success like Rick does.",
     },
   ];
   
