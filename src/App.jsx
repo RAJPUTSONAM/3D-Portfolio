@@ -14,7 +14,7 @@ const App = () => {
         <Experience />
         <Tech /> 
         <Works />
-        <SlideShow/>
+        {/* <SlideShow/> */}
         <Team />
         <div className='relative z-0'>
           <Contact />

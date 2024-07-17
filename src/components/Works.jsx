@@ -8,6 +8,7 @@ import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
 import { Svg } from '@react-three/drei';
+import { SlideShow } from '.';
 
 const ProjectCard = ({index, name, description, tags, image, source_code_link}) => {
   return (
@@ -67,7 +68,7 @@ const Works = () => {
       Our Work</h3>
     </div>
 
-  <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] mt-8'>
+  {/* <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-[30px] mt-8'>
       <div className='flex transition-all duration-500 hover:scale-105 shadow 
       dark:shadow-gray-800 hover:shadow-md dark:hover:shadow-gray-700
       ease-in-out items-center p-3 rounded-md bg-white 
@@ -303,8 +304,8 @@ const Works = () => {
         OF REAL ESTATE</h4>
       </div>
     </div>
-  </div> 
-
+  </div>  */}
+<SlideShow/>
 </div>
       
   )
