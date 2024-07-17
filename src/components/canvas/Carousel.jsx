@@ -38,7 +38,7 @@ export default function Carousel({ slides }) {
         ))}
       </div>
       <div className="absolute inset-0 flex items-center justify-between px-2">
-        <button onClick={previousSlide} className=" text-3xl text-indigo-300 hover:text-slate-100">
+        <button onClick={previousSlide} className=" text-3xl text-indigo-300 hover:text-slate-800">
           <MdOutlineKeyboardDoubleArrowLeft />
         </button>
         <button onClick={nextSlide} className=" text-3xl text-indigo-300 hover:text-slate-100">
