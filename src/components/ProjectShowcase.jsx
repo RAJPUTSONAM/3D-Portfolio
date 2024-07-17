@@ -10,7 +10,7 @@ function ProjectShowcase() {
           className="rounded-lg shadow-lg ml-3"
         />
       </div>
-      <div className="w-full lg:w-[512px] ml-8">
+      <div className="w-full lg:w-[512px] ml-[2rem]">
         <h1 className="text-2xl font-bold max-w-lg">1 Project</h1>
         <p className="mt-4 max-w-xl">
           This is my First Project
@@ -38,7 +38,7 @@ function ProjectShowcase() {
           className="rounded-lg shadow-lg"
         />
       </div>
-      <div className="w-full lg:w-1/2 ml-[5rem]">
+      <div className="w-full lg:w-1/2 ml-[4rem]">
         <h1 className="text-2xl font-bold">2 Project</h1>
         <p className="mt-4">
           Description for another project goes here.
@@ -50,7 +50,7 @@ function ProjectShowcase() {
           <strong>Tech Stack:</strong> AnotherTechStack
         </p>
         <a
-          href="https://click.com"
+          href="#"
           className="mt-4 inline-block px-4 py-2 bg-indigo-600 hover:bg-indigo-700 border-indigo-600 
   hover:border-indigo-700 btn rounded-lg transition"
         >
@@ -66,7 +66,7 @@ function ProjectShowcase() {
           className="rounded-lg shadow-lg "
         />
       </div>
-      <div className="w-full lg:w-1/2 ml-[5rem]">
+      <div className="w-full lg:w-1/2 ml-[4rem]">
         <h1 className="text-2xl font-bold">3 Project</h1>
         <p className="mt-4">
           Description for another project goes here.
@@ -74,11 +74,11 @@ function ProjectShowcase() {
         <p className="mt-2">
           <strong>Blockchain:</strong> AnotherBlockchain
         </p>
-        <p className="mt-1">
+        <p className="mt-2">
           <strong>Tech Stack:</strong> AnotherTechStack
         </p>
         <a
-          href="https://click.com"
+          href="#"
           className="mt-4 inline-block px-4 py-2 bg-indigo-600 hover:bg-indigo-700 border-indigo-600 
   hover:border-indigo-700 btn rounded-lg transition"
         >
