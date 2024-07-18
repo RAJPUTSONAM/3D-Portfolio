@@ -78,14 +78,14 @@ const Team = () => {
     <div className="grid grid-cols-12 gap-6 items-center">
     <div className="col-span-6">
     <div className="grid grid-cols-1 gap-6">
-      <img src="https://nambitech.com/assets/images/about/ab03.jpg" className="shadow rounded-md" />
-      <img src="https://nambitech.com/assets/images/about/ab02.jpg" className="shadow rounded-md" />
+      <img src="https://images.pexels.com/photos/13801640/pexels-photo-13801640.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="shadow rounded-md" />
+      <img src="https://images.pexels.com/photos/8145334/pexels-photo-8145334.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" className="shadow rounded-md" />
     </div>
     </div>
 
     <div className="col-span-6">
     <div className="grid grid-cols-1 gap-6">
-    <img src="https://nambitech.com/assets/images/about/ab01.jpg" className="shadow rounded-md"/>
+    <img src="https://images.pexels.com/photos/7793193/pexels-photo-7793193.jpeg?auto=compress&cs=tinysrgb&w=600" className="shadow rounded-md"/>
     </div>
     </div>
   </div>
