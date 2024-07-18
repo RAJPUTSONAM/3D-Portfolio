@@ -35,7 +35,7 @@ const AboutCard = ({ index, title, icon }) => {
 const About = () => {
   return ( 
   <>
-  <div className='mt-2'> 
+  <div className='mt-0'> 
   <h3 className={styles.sectionHeadText}>About Us</h3>
   <p className='text-slate-400 max-w-xl'>A team of skilled members having       
   work Experience in different domain like 
