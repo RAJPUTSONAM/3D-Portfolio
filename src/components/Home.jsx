@@ -6,7 +6,7 @@ import { SectionWrapper } from "../hoc";
 
 const Home = () => {
   return (
-    <section className="relative w-full h-screen mx-auto fixed">
+    <section className="relative w-full h-screen mx-auto fixed ">
       <div className={`${styles.paddingX} absolute inset-0 top-[20px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
         <div className="flex flex-col justify-center items-center ">
           <div className="w-5 h-5 rounded-full bg-[#915eff]" />
@@ -29,10 +29,11 @@ const Home = () => {
 
         </div>
       </div>
-      <div className="h-[100vh] w-full overflow-hidden">
+      <div className="h-[520px] sm:h-[500px] md:h-[800px] overflow-hidden sm:mt-0">
   <ComputersCanvas />
 </div>
-      <div className="absolute xs:bottom-10  w-full flex justify-center items-center">
+
+      <div className="absolute xs:bottom-10  w-full flex justify-center sm:mb-0 items-center">
         <a href="#about">
           {/* <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-center p-2">
             <motion.div 
