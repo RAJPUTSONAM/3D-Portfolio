@@ -46,12 +46,7 @@ function ProjectShowcase() {
         <p className="mt-1 max-w-lg">
           <strong>Tech Stack:</strong> {slide.techStack}
         </p>
-        <a
-          href={slide.link}
-          target="_blank"
-          className="mt-5 inline-block cursor-pointer px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 border-indigo-600 
-  hover:border-indigo-700 transition btn"
-        >
+        <a href={slide.link} target="_blank" className="mt-5 inline-block cursor-pointer px-4 py-2 rounded-lg bg-indigo-600 hover:bg-indigo-700 border-indigo-600 hover:border-indigo-700 transition btn">
           click here
         </a>
       </div>

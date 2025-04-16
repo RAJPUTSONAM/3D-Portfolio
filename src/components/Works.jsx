@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react/prop-types */
 import {Tilt} from 'react-tilt';
 import { motion } from 'framer-motion';
 

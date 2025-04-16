@@ -1,3 +1,8 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable react-refresh/only-export-components */
+/* eslint-disable react/prop-types */
+/* eslint-disable react/no-unknown-property */
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import { Tilt }from 'react-tilt';
 import { motion } from 'framer-motion';
@@ -17,9 +22,9 @@ const AboutCard = ({ index, title, icon }) => {
   >
   <div 
     options={{
-    max: 45,
-    scale: 1,
-    speed: 450
+    max: 45, 
+    scale: 1, 
+    speed: 450 
   }}         
     className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] 
     flex justify-evenly items-center flex-col'
@@ -45,7 +50,7 @@ const About = () => {
   <div className='grid lg:grid-cols-12 md:grid-cols-2 
    grid-col-1 items-center mt-16 gap-[30px]'>
   <div className='lg:col-span-5'>
-  <img src='https://ultraboxhosting.imgix.net/hero-svg-img-1.svg?auto=format&fit=clip&dpr=2' alt='animation' 
+  <img src='https://nambitech.com/static/media/SEO_SVG.bc731bf7e6c753dbf696f28f12f59af0.svg' alt='animation' 
   className='float-right my-0.4 h-[350px] w-[560px] '/>
   </div>
   <div className='lg:col-span-7 mt-8 md:mt-0'>

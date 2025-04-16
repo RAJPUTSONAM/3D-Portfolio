@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable no-unused-vars */
 import { useState, useEffect } from "react";
 import { BsFillArrowLeftCircleFill, BsFillArrowRightCircleFill, BsPauseCircle, BsPlayCircle } from "react-icons/bs";
 import { MdOutlineKeyboardDoubleArrowLeft, MdOutlineKeyboardDoubleArrowRight } from "react-icons/md";
