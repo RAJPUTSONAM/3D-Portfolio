@@ -13,14 +13,19 @@ const Home = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
         <div>
-          <h4 className="font-semibold lg:leading-normal leading-relaxed text-4xl lg:text-4xl text-white">
-            Extrnl.io <span className='text-xl font-medium'><br />An International software development company</span>
-            <br /> <span className="text-indigo-600">  
-            Turning<span className='pl-1'>Visions</span> into Code</span>
-          </h4>
-          <p className="text-slate-400 text-lg max-w-2xl mt-[1px] md:mt-32 lg:mt-3 leading-[30px] p-[1px] md:p-0">
-            "Expert software developers with a passion for creating commercially viable Blockchain products."
-          </p>
+        <h4 className="font-semibold text-white text-2xl sm:text-3xl lg:text-4xl leading-relaxed sm:leading-normal max-w-2xl">
+         Extrnl.io  
+       <span className="block text-base sm:text-xl font-medium text-gray-300 mt-1">
+        An International software development company
+       </span>
+       <span className="block text-indigo-600 text-base sm:text-lg lg:text-2xl mt-2">
+  Turning <span className="pl-1">Visions</span> into Code
+</span>
+    </h4>
+    <p className="text-slate-400 text-sm sm:text-base lg:text-lg max-w-2xl mt-[1px] md:mt-32 lg:mt-3 leading-[26px] sm:leading-[31px] lg:leading-[30px] p-[1px] md:p-0">
+  "Expert software developers with a passion for creating commercially viable Blockchain products."
+</p>
+
         </div>
       </div>
       <ComputersCanvas />
